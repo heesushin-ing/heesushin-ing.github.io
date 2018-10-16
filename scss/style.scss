@@ -119,6 +119,7 @@ Intro page
 		color: $color-3;
 		@include font-smoothing;
 	}
+    
 
 	&.projects-visible {
 		/* translate the .cd-intro-block element to reveal the projects slider */
