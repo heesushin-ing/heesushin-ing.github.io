@@ -120,6 +120,11 @@ Intro page
 		@include font-smoothing;
 	}
     
+    p{
+        color: whitesmoke; 
+        padding-bottom: 3rem; 
+        line-height: 1.4;
+    }
 
 	&.projects-visible {
 		/* translate the .cd-intro-block element to reveal the projects slider */
