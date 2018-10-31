@@ -44,7 +44,11 @@ p {
     typing 9s steps(60, end),
     blink-caret 1s step-end infinite;
 }
-
+@media only screen and (max-width: 600px) {
+    .typewriter h1 {
+        max-width: 28rem;
+    }
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
