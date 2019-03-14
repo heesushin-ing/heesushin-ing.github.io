@@ -3,6 +3,7 @@
 Primary style
 
 -------------------------------- */
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -14,12 +15,12 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Inconsolata', monospace;
-  color: #0f1926;
+  color: #ffffff;
   background-color: #ebebeb;
 }
 
 a {
-  color: #eebb00;
+  color: #303333;
   text-decoration: none;
 }
 
@@ -28,7 +29,7 @@ img {
 }
 
 p {
-    color: whitesmoke;
+    color: $color-3;
     padding-bottom: 2rem;
     line-height: 1.4;
 }
@@ -46,7 +47,7 @@ p {
 }
 @media only screen and (max-width: 600px) {
     .typewriter h1 {
-        max-width: 28rem;
+        max-width: 24rem;
     }
 }
 /* The typing effect */
@@ -70,9 +71,9 @@ Patterns - reusable parts of our design
   display: inline-block;
   padding: 1.4em 2em;
   border-radius: 50em;
-  background-color: #eebb00;
+  background-color: #fff;
   box-shadow: 0 1px 20px rgba(238, 187, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  color: #ffffff;
+  color: #303333;
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
