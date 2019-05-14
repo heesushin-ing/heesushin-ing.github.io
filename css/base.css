@@ -143,10 +143,6 @@ main {
 	margin: 0 0.5rem;
 }
 
-.menutop__item--social {
-	color: #323232;
-}
-
 .menu {
 	position: fixed;
 	top: 9.6875rem;
