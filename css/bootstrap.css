@@ -21,7 +21,7 @@
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
-  --info: #17a2b8;
+  --info: #007bff;
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
@@ -57,7 +57,7 @@ body {
 min-height: 100vh;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.4;
   color: #fff;
   text-align: left;
   background: #000000;  /* fallback for old browsers */
