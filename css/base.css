@@ -106,14 +106,19 @@ main {
 	text-transform: lowercase;
 }
 
-.header__links a:nth-child(2) {
-	margin: 0 1rem;
-}
+
+
 
 .header__title {
 	font-size: 1rem;
 	line-height: 1;
 	margin: 0 0 0.75rem 0;
+}
+
+.header__about {
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0 0 0 0.75rem;
 }
 
 .pageheader {
@@ -130,10 +135,10 @@ main {
 
 .menu {
 	position: fixed;
-	top: 9.6875rem;
+	top: 5rem;
 	left: 0;
 	width: 100%;
-	height: calc(100% - 9.6875rem);
+	height: calc(100% - 5rem);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -209,7 +214,7 @@ main {
 	grid-template-columns: 100%;
 	grid-template-rows: 1.75rem calc(100% - 1.75rem);
 	position: relative;
-	padding: 12rem 5vw 2rem;
+	padding: 8rem 5vw 2rem;
 	pointer-events: none;
 }
 

@@ -34,12 +34,14 @@
             <header class="header">
                 <h1 class="header__title">Heesu Shin-ing</h1>
                 <div class="header__links">
-                    <a href="https://brunch.co.kr/@heesu330" title="Read my Korean articles">Brunch</a>
-                    <a href="https://medium.com/@heesushin92" title="Read my articles">Medium</a>
-                    <a href="https://www.linkedin.com/in/heesushin/" title="Find my Linkedin">Linkedin</a>
+                    <a href="https://brunch.co.kr/@heesu330" title="Read my Korean articles" class="pr-3">Brunch</a>
+                    <a href="https://medium.com/@heesushin92" title="Read my articles" class="pr-3">Medium</a>
+                    <a href="https://www.linkedin.com/in/heesushin/" title="Find my Linkedin" class="pr-3">Linkedin</a>
+                    <a href="" title="Download CV">Download CV</a>
                 </div>
+                
             </header>
-            <h2 class="pageheader">Design portfolio</h2>
+            <h2 class="pageheader d-none d-md-block">Design portfolio</h2>
             
         </div>
         <nav class="menu">
@@ -209,7 +211,12 @@
             console.log(e);
         });
     });
+    
 </script>
-
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })    
+</script>
 </body>
 </html>
