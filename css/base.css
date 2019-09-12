@@ -83,7 +83,7 @@ main {
 
 .frame {
 	padding: 2rem 1rem 0;
-	text-align: center;
+	text-align: left;
 	position: absolute;
 	z-index: 10000;
 	top: 0;
