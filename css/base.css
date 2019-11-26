@@ -47,7 +47,7 @@ footer p {
     --color-info: #272526;
     --grid-item-bg: #f1f1f1;
     --color-close: #ec1752;
-    font-family: Futura, "futura-pt", sans-serif;
+
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
