@@ -14,7 +14,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/base.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
   </head>
@@ -22,7 +22,7 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <a class="navbar-brand pb-0" href="#"><i class="material-icons md-36">face</i></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -45,13 +45,15 @@
     </header>
 
     <main role="main">
-        <div class="jumbotron text-center">
-            <h2>Hello, I am a User eXperience designer, based in London.</h2>
-            <h4>Currently working in finance, Societe Generale CIB</h4>
-        </div>
+        <span>
+            <div class="jumbotron text-center" id="myDIV">
+                <h2>Hello, I am a User eXperience designer, based in London.</h2>
+                <h4>Currently working in finance, Societe Generale CIB</h4>
+            </div>
+      </span>
         <div class="grid-wrap">
         <div class="grid">
-            <a href="#" class="grid__item">
+            <a href="#" class="grid__item" onclick="myFunction()">
                 <div class="grid__item-bg"></div>
                 <div class="grid__item-wrap">
                     <img class="grid__item-img" src="img/1.jpg" alt="Some image" />
@@ -59,7 +61,7 @@
                 <h3 class="grid__item-title">Finance</h3>
                 <h4 class="grid__item-number">01</h4>
             </a>
-            <a href="#" class="grid__item">
+            <a href="#" class="grid__item" onclick="myFunction()">
                 <div class="grid__item-bg"></div>
                 <div class="grid__item-wrap">
                     <img class="grid__item-img" src="img/2.jpg" alt="Some image" />
@@ -67,13 +69,21 @@
                 <h3 class="grid__item-title">Vehicle</h3>
                 <h4 class="grid__item-number">02</h4>
             </a>
-            <a href="#" class="grid__item">
+            <a href="#" class="grid__item" onclick="myFunction()">
                 <div class="grid__item-bg"></div>
                 <div class="grid__item-wrap">
                     <img class="grid__item-img" src="img/3.jpg" alt="Some image" />
                 </div>
                 <h3 class="grid__item-title">Branding</h3>
                 <h4 class="grid__item-number">03</h4>
+            </a>
+            <a href="#" class="grid__item" onclick="myFunction()">
+                <div class="grid__item-bg"></div>
+                <div class="grid__item-wrap">
+                    <img class="grid__item-img" src="img/10.jpg" alt="Some image" />
+                </div>
+                <h3 class="grid__item-title">IoT</h3>
+                <h4 class="grid__item-number">04</h4>
             </a>
 
         </div>
@@ -84,31 +94,33 @@
                     <img class="content__item-img" src="img/1.jpg" alt="Some image" />
                     <h2 class="content__item-title">SG Markets</h2>
                 </div>
-                <h3 class="content__item-subtitle">"How I design the suites of B2B services for internal staff and external clients"</h3>
+                <h3 class="content__item-subtitle">"How I design the suites of B2B services in finance"</h3>
                 <div class="content__item-text">
-                    <p>As a UX/UI designer in Societe Generale CIB, currently based in London, I am tackling complex financial projects in the BtoB space. That's why our team motto is 'Rethink Complexity'.</p>
-                    <p>From daily tools for internal staff to professional financial services for sales, analysts, syndicate originators, etc, I have been working on many different projects. Also, our team has designed and developed our SG design system to unite the user experience across the services.<br>
-                    Sadly, most projects are confidential for now, but you can read the stories for more details below.
-                    <a href="">Coffee, Excel and InVision—Inside the Everyday of a Financial UX Designer</a>
-                    <a href="">Retro — London’s Fintech Design Summit 2019 | How to tackle complexity and focus on users in finance</a>
+                    <p class="mb-3">As a UX/UI designer in Societe Generale CIB, currently based in London, I am tackling complex financial projects in the BtoB space. That's why our team motto is 'Rethink Complexity'.</p>
+                    <p class="pb-3">From daily tools for internal staff to professional financial services for sales, analysts, syndicate originators, etc, I have been working on many different projects. Also, our team has designed and developed our SG design system to unite the user experience across the services.</p>
+                    <p class="mb-3">Sadly, most projects are confidential for now, but you can read the stories for more details below.</p>
+                    <hr>
+                    <p><a href="">Coffee, Excel and InVision—Inside the Everyday of a Financial UX Designer</a><br>
+                    <a href="">Retro — London’s Fintech Design Summit 2019 | How to tackle complexity and focus on users in finance</a><br>
                     Come here to know more about our team!</p>
+                </div>
+                <div class="content__item-paragraph">
+                    <p>List of projects</p>
                 </div>
             </div><!-- /content__item -->
             <div class="content__item">
                 <div class="content__item-intro">
                     <img class="content__item-img" src="img/2.jpg" alt="Some image" />
-                    <h2 class="content__item-title">One day in Africa</h2>
+                    <h2 class="content__item-title">222</h2>
                 </div>
-                <h3 class="content__item-subtitle">"How I learned to cherish life after a trip to hell"</h3>
+                <h3 class="content__item-subtitle">"How I got interested in vehicle"</h3>
                 <div class="content__item-text">
-                    <p>Even 10 years ago, most of the concept cars from industry were only emphasising how fast and sexy they are. However, the trend is completely changed. The vehicle is not just a transportation, but it is the space closed related to our lives.
+                    <p class="mb-5">Even 10 years ago, most of the concept cars from industry were only emphasising how fast and sexy they are. However, the trend is completely changed. The vehicle is not just a transportation, but it is the space closed related to our lives.
                     Thus, crafting the user experience within and even around the mobility is becoming more and more important. Although I work in finance industry currently, I have been interested in vehicle. These are my side projects, collaborating with a vehicle designer, Dain Kim.</p>
                     
-                    <p>Mei Flower Cake is a sole brand for flower-shaped rick cake, based in Seoul, South Korea. To emphasize its brand identity, which is 'Lovely blossom', I've done the art direction with artwork, business card, sticker, menu etc.</p>
                     
-                    <p>HOO was 100% my personal work from concept development, product design to UX/UI/GUI design: 360 Degree Airwasher with iPhone/iWatch applications.
-                    Since there are more and more user needs to purify the air within the house, the airwasher can be stylish enough to be one of the interior products. At the same time, it can be smart enough to be connected to our smart phones.
-                    To see more detailed process, come to my behance</p>
+                    
+                    
                 </div>
             </div><!-- /content__item -->
             <div class="content__item">
@@ -118,13 +130,31 @@
                 </div>
                 <h3 class="content__item-subtitle">"Branding works for visual identity with business strategy"</h3>
                 <div class="content__item-text">
-                    <p> </p>
+                    <p>Mei Flower Cake is a sole brand for flower-shaped rick cake, based in Seoul, South Korea. To emphasize its brand identity, which is 'Lovely blossom', I've done the art direction with artwork, business card, sticker, menu etc.
+                    
+                    </p>
+                </div>
+            </div>
+            
+            <div class="content__item">
+                <div class="content__item-intro">
+                    <img class="content__item-img" src="img/10.jpg" alt="Some image" />
+                    <h2 class="content__item-title">IoT</h2>
+                </div>
+                <h3 class="content__item-subtitle">"An airwasher to purify the air at your home"</h3>
+                <div class="content__item-text">
+                    <p>HOO was 100% my personal work from concept development, product design to UX/UI/GUI design: 360 Degree Airwasher with iPhone/iWatch applications.
+                    Since there are more and more user needs to purify the air within the house, the airwasher can be stylish enough to be one of the interior products. At the same time, it can be smart enough to be connected to our smart phones.<br><br>
+                    To see more detailed process, come to my behance</p>
                 </div>
             </div><!-- /content__item -->
 
-            <button class="content__close">Close</button>
+            <button class="content__close" onclick="myFunction()">Close</button>
             <svg class="content__indicator icon icon--caret"><use xlink:href="#icon-caret"></use></svg>
+        
+            
         </div>
+        
     </main>
   <script src="js/imagesloaded.pkgd.min.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
@@ -132,15 +162,7 @@
   <script src="js/TweenMax.min.js"></script>
   <script src="js/demo.js"></script>
 
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
-        </p>
-        <p>Designed and developed by myself!</p>
-        
-      </div>
-    </footer>
+ 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -150,5 +172,18 @@
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
       <script src="js/bootstrap.js"></script>
+      
+      
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+    </script>  
+      
   </body>
 </html>

@@ -7,6 +7,7 @@
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
   background-color: #fff;
+    position: relative;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -27,14 +28,22 @@
   max-width: 40rem;
 }
 
+.jumbotron--hidden {
+	height: 0;
+	overflow: hidden;
+}
+
+
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  
 }
 
 footer p {
   margin-bottom: .25rem;
 }
+
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
@@ -153,20 +162,8 @@ main {
 	margin: 0;
 }
 
-/* Top Navigation Style */
-.codrops-links {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	white-space: nowrap;
-}
+/* Grid items for each project */
 
-.codrops-icon {
-	display: inline-block;
-	margin: 0.15em;
-	padding: 0.25em;
-}
 
 .grid-wrap {
 	position: relative;
@@ -189,6 +186,7 @@ main {
 .js .grid {
 	display: block;
 }
+
 
 .grid__item {
 	width: 260px;
@@ -308,6 +306,8 @@ main {
 	visibility: hidden;
 }
 
+
+
 .content__item-title {
 	position: relative;
 	font-size: 7vw;
@@ -337,6 +337,12 @@ main {
 	margin: 0 auto;
 }
 
+.content__item-paragraph {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
 .content__item-text p {
 	margin: 0;
 }
@@ -359,9 +365,11 @@ main {
 	outline: none;
 }
 
+
 .content__item--current ~ .content__close {
 	pointer-events: auto;
 }
+
 
 .content__indicator {
 	position: absolute;
@@ -415,6 +423,9 @@ main {
   		column-count: 2;
   		column-gap: 20px;
   	}
+    .content__item-paragraph{
+        column-count: 1;
+    }
 	.content__item-img {
 		max-width: none;
 		height: calc(100vh - 6rem);
