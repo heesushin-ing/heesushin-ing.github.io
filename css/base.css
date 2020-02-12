@@ -319,6 +319,13 @@ main {
 	grid-area: 1 / 1 / 1 / 1;
 }
 
+@media only screen and (max-width: 601px) {
+  .content__item-title {
+    font-size: 15vw;
+  }
+}
+
+
 .content__item-title > span {
 	white-space: pre;
 	display: inline-block;
@@ -332,7 +339,7 @@ main {
 }
 
 .content__item-text {
-	text-align: justify;
+	text-align: left;
 	max-width: 800px;
 	margin: 0 auto;
 }
@@ -340,7 +347,7 @@ main {
 .content__item-paragraph {
     max-width: 800px;
     margin: 0 auto;
-    text-align: justify;
+    text-align: left;
 }
 
 .content__item-text p {
@@ -416,6 +423,7 @@ main {
 	.grid__item-title {
 		margin-left: -0.25rem;
 	}
+    
 	.content__item-subtitle {
 		font-size: 3vw;
 	}
@@ -436,3 +444,4 @@ main {
 	.content__indicator {
 		display: block;
 	}
+    
