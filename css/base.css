@@ -3,11 +3,6 @@
 
 }
 
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
 
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
@@ -15,6 +10,7 @@ html { font-family: 'Inter', sans-serif; }
   margin-bottom: 0;
   background-color: #fff;
     position: relative;
+    font-family: 'Inter var';
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -56,6 +52,16 @@ footer p {
 	background-color: #fff;
 	background-color: var(--color-bg);
     font-family: 'Inter', Helvetica, Arial, sans-serif; !important
+}
+
+.html {
+    font-family: 'Inter', Helvetica, Arial, sans-serif; !important
+
+}
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+html { font-family: 'Inter var', sans-serif; }
 }
 
 /* Page Loader */
