@@ -3,7 +3,8 @@
 
 }
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, helvetica, sans-serif;
+    
 }
 
 .jumbotron {
@@ -31,25 +32,28 @@ html {
 }
 
 h1 {
+    font-family: Permanent Marker, helvetica, sans-serif;
     font-size: 2.5rem;
     line-height: 1.2em;
 }
 h2 {
   color: #010101;
-  font-size:2rem;
+  font-size:1.5rem;
   
   line-height: 1.2em;
-  text-indent: -0.03em;
+
   margin-bottom: 2rem;
   margin-top: 10px;
   font-weight: 500;
 }
+
+
 h4 {
   color: #010101;
   font-size:1.2rem;
  
   line-height: 1.5em;
-  text-indent: -0.03em;
+
   margin-bottom: 2rem;
   margin-top: 10px;
   font-weight: 400;
@@ -240,7 +244,7 @@ main {
 }
 
 .grid__item-title {
-    font-size: 1.7rem;
+    font-size: 2rem;
 	font-weight: normal;
 	position: absolute;
 	left: 0;
@@ -253,11 +257,12 @@ main {
 }
 
 .grid__item-number {
-	font-weight: bold;
+    font-family: Permanent Marker, helvetica, sans-serif;
+
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	font-size: 2.65rem;
+	font-size: 2rem;
 	margin: 0 0 0.15rem;
 }
 
