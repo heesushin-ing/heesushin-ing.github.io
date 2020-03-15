@@ -1,5 +1,6 @@
 :root {
   --jumbotron-padding-y: 3rem;
+    --mainColor: #D9D4D0;
 
 }
 html {
@@ -117,11 +118,31 @@ footer p {
 	}
 }
 
-a {
-	text-decoration: none;
+span a {
 	color: var(--color-link);
 	outline: none;
+    background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .5s;
 }
+
+span a:hover {
+  background-size: 4px 50px;
+}
+
+a{
+	color: var(--color-link);
+    outline: none;
+}
+
 
 a:hover,
 a:focus {
@@ -258,7 +279,6 @@ main {
 
 .grid__item-number {
     font-family: Permanent Marker, helvetica, sans-serif;
-
 	position: absolute;
 	right: 0;
 	bottom: 0;
