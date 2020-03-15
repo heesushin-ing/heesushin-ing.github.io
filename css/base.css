@@ -48,7 +48,9 @@ h2 {
   font-weight: 500;
 }
 
-
+h3 {
+    font-family: Permanent Marker, helvetica, sans-serif;
+}
 h4 {
   color: #010101;
   font-size:1.2rem;
@@ -350,7 +352,7 @@ main {
 
 .content__item-title {
 	position: relative;
-	font-size: 7vw;
+	font-size: 10vw;
 	line-height: 1;
 	text-align: center;
 	margin: 0;
@@ -374,7 +376,7 @@ main {
 
 .content__item-subtitle {
 	text-align: center;
-	font-size: 1.25rem;
+	font-size: 2rem;
 	font-weight: bold;
 	margin: 3rem auto;
     line-height: 1.2;
