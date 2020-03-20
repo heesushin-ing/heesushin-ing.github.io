@@ -472,12 +472,10 @@ main {
 		font-size: 3vw;
 	}
 	.content__item-text {
-  		column-count: 2;
-  		column-gap: 20px;
+  		column-count: 1;
+ 
   	}
-    .content__item-paragraph{
-        column-count: 1;
-    }
+
 	.content__item-img {
 		max-width: none;
 		height: calc(100vh - 6rem);
