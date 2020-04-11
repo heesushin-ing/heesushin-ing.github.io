@@ -394,7 +394,7 @@ main {
     position: relative;
 	width: 100%;
     height: auto;
-	margin: 0 auto;
+	margin: 0;
 	display: block;
     object-fit: cover;
 }
