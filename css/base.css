@@ -248,18 +248,13 @@ main {
 	height: 100%;
 	background: var(--grid-item-bg);
 }
-.img {
-    position: relative;
-	max-width: 100%;
-    height: auto;
-	margin: 0 auto;
-	display: block;
-}
+
 
 .grid__item-img {
 	pointer-events: none;
 	position: relative;
 	max-width: 100%;
+    height: auto;
 	margin: 0 auto;
 	display: block;
 	outline: 1px solid transparent;
@@ -393,6 +388,14 @@ main {
 	text-align: left;
 	max-width: 800px;
 	margin: 0 auto;
+}
+
+.content__item-text img {
+    position: relative;
+	max-width: 100%;
+    height: inherit;
+	margin: 0 auto;
+	display: block;
 }
 
 .content__item-paragraph {
