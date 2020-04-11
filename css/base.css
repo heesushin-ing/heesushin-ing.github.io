@@ -398,11 +398,10 @@ main {
 
 .row img {
     position: relative;
-	width: 100%;
+	max-width: 100%;
     height: auto;
 	margin: 0 0 0 0;
 	display: block;
-    object-fit: cover;
     overflow: hidden;
 }
 
