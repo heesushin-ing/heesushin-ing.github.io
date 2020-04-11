@@ -392,7 +392,7 @@ main {
 
 .content__item-text img {
     position: relative;
-	max-width: 100%;
+	width: 100%;
     height: inherit;
 	margin: 0 auto;
 	display: block;
