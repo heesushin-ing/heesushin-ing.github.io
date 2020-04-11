@@ -248,6 +248,12 @@ main {
 	height: 100%;
 	background: var(--grid-item-bg);
 }
+.img {
+    position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
+}
 
 .grid__item-img {
 	pointer-events: none;
