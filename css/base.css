@@ -393,9 +393,10 @@ main {
 .content__item-text img {
     position: relative;
 	width: 100%;
-    height: inherit;
+    height: auto;
 	margin: 0 auto;
 	display: block;
+    object-fit: cover;
 }
 
 .content__item-paragraph {
