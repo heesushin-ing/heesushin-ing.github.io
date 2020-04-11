@@ -390,7 +390,7 @@ main {
 	margin: 0 auto;
 }
 
-.content__item-text img {
+.row img {
     position: relative;
 	width: 100%;
     height: auto;
