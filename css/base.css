@@ -396,7 +396,9 @@ main {
 	max-width: 100%;
     height: auto;
 	margin: 0 0 0 0;
-    object-fit: none;
+	display: block;
+    overflow: hidden;
+    object-fit: scale-down;
 }
 
 .content__item-paragraph {
