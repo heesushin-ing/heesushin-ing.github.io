@@ -393,11 +393,9 @@ main {
 
 .row img {
     position: relative;
-	max-width: 100%;
-    height: auto;
+	max-width: auto;
+    height: 100%;
 	margin: 0 0 0 0;
-	display: block;
-    overflow: hidden;
 }
 
 .content__item-paragraph {
