@@ -393,9 +393,10 @@ main {
 
 .row img {
     position: relative;
-	max-width: auto;
-    height: 100%;
+	max-width: 100%;
+    height: auto;
 	margin: 0 0 0 0;
+    object-fit: contain;
 }
 
 .content__item-paragraph {
