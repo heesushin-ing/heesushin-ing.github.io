@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div class="content__item-paragraph mt-5">
-                    <hr><h3 class="mb-4">List of projects</h3>
+                    <hr><h3 class="mb-4">Projects</h3>
                     <img src="/img/1.1.jpg" class="img-fluid" alt="">
                     <span class="card my-4">
                               <div class="card-body">
@@ -116,6 +116,12 @@
                     <p class="mt-4">How I work with others: collaboration is a key to become a better UX designer. I have worked with various profiles within finance industry, plus IT developers. Moreover, our UX team has almost 20 designers across London, Paris and New York. We've worked together with projects for pair design or evolution of our design system.</p>
                     <h3>Working together is always challenging, but enjoyable a lot! 😆</h3>
                 </div>
+                
+                <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <span class="material-icons">
+                arrow_upward
+                </span>
+                </button>
             </div><!-- /content__item -->
             <div class="content__item">
                 <div class="content__item-intro">
@@ -126,12 +132,17 @@
                 <div class="content__item-text">
                     <p class="mb-5">Even 10 years ago, most of the concept cars from industry were only emphasising how fast and sexy they are. However, the trend is completely changed. The vehicle is not just a transportation, but it is the space closed related to our lives.</p>
                     <p>
-                    Thus, crafting the user experience within and even around the mobility is becoming more and more important. Although I work in finance industry currently, I have been interested in vehicle. These are my side projects, collaborating with a vehicle designer, Dain Kim.</p>
+                    Thus, crafting the user experience within and even around the mobility is becoming more and more important. Although I work in finance industry currently, I have been interested in vehicle.</p>
                     
                     
                     
                     
                 </div>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <span class="material-icons">
+                arrow_upward
+                </span>
+                </button>
             </div><!-- /content__item -->
             <div class="content__item">
                 <div class="content__item-intro">
@@ -154,7 +165,11 @@
                     <p>Feel free to contact me for any business inquiries! 😎<br>heesushin-ing@gmail.com</p>
                     
                 </div>
-                
+                <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <span class="material-icons">
+                arrow_upward
+                </span>
+                </button>
             </div>
             
             <div class="content__item">
@@ -178,7 +193,11 @@
                     </div>  
                     <span><p>To see more detailed process, come to my <a href="https://www.behance.net/gallery/43910131/360-degree-Airwasher-HOO-with-iPhoneiWatch-app" target="_blank">behance</a></p></span>    
                 </div>
-                
+                <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <span class="material-icons">
+                arrow_upward
+                </span>
+                </button>
             </div><!-- /content__item -->
 
             <button class="content__close" onclick="myFunction()">Close</button>
@@ -215,7 +234,27 @@
   <script src="js/demo.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap.js"></script>
+    <script>
+        //Get the button
+    var mybutton = document.getElementById("myBtn");
 
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
    
   </body>
 </html>
