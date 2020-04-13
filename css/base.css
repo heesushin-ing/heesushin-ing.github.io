@@ -390,7 +390,7 @@ main {
 	margin: 0 auto;
 }
 
-.content__item-text .row img {
+img {
     position: relative;
 	height: auto;
 	max-width: 100%;
