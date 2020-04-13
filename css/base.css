@@ -488,7 +488,7 @@ img {
   	}
 
 	.content__item-img {
-		max-width: none;
+		max-width: 80%;
 		height: calc(100vh - 6rem);
 	}
 	.content__item-subtitle {
@@ -497,7 +497,17 @@ img {
 	.content__indicator {
 		display: block;
 	}
+ 
+    img {
+    position: relative;
+	height: auto;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	grid-area: 1 / 1 / 1 / 1;
+    }
     
+}
 
 
 
