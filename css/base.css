@@ -488,7 +488,7 @@ img {
   	}
 
 	.content__item-img {
-		max-width: 80%;
+		max-width: auto;
 		height: calc(100vh - 6rem);
 	}
 	.content__item-subtitle {
