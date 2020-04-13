@@ -390,6 +390,14 @@ main {
 	margin: 0 auto;
 }
 
+.content__item-text img {
+    position: relative;
+	height: auto;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	grid-area: 1 / 1 / 1 / 1;
+}
 
 .content__item-paragraph {
     max-width: 800px;
