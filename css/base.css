@@ -399,7 +399,6 @@ main {
 	margin: 0 0 0 0;
 	display: block;
     overflow: hidden;
-    object-fit: scale-down;
 }
 
 .content__item-paragraph {
