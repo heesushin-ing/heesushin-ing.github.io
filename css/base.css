@@ -498,14 +498,6 @@ img {
 		display: block;
 	}
  
-    img {
-    position: relative;
-	height: auto;
-	max-width: 100%;
-	display: block;
-	margin: 0 auto;
-	grid-area: 1 / 1 / 1 / 1;
-    }
     
 }
 
