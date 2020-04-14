@@ -268,9 +268,12 @@ main {
 	transform: rotate3d(0,0,1,-4deg);
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> parent of 214d20e... Add scroll-up btn
 .grid__item-title {
     font-size: 2rem;
 	font-weight: normal;
@@ -435,6 +438,7 @@ img {
 	pointer-events: auto;
 }
 
+<<<<<<< HEAD
 /*Scroll to top button*/
 
 #top {
@@ -456,6 +460,8 @@ img {
 #top:hover {
   background-color: #000; /* Add a black background on hover */
 }
+=======
+>>>>>>> parent of 214d20e... Add scroll-up btn
 
 
 
