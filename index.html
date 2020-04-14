@@ -117,7 +117,7 @@
                     <h3>Working together is always challenging, but enjoyable a lot! 😆</h3>
                 </div>
                 
-                <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <button onclick="topFunction()" id="top" title="Go to top">
                 <span class="material-icons">
                 arrow_upward
                 </span>
@@ -128,21 +128,19 @@
                     <img class="content__item-img" src="img/2.jpg" alt="Some image" />
                     <h2 class="content__item-title"> </h2>
                 </div>
+                
                 <h3 class="content__item-subtitle">How I got interested in vehicle</h3>
                 <div class="content__item-text">
                     <p class="mb-5">Even 10 years ago, most of the concept cars from industry were only emphasising how fast and sexy they are. However, the trend is completely changed. The vehicle is not just a transportation, but it is the space closed related to our lives.</p>
                     <p>
                     Thus, crafting the user experience within and even around the mobility is becoming more and more important. Although I work in finance industry currently, I have been interested in vehicle.</p>
-                    
-                    
-                    
-                    
-                </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">
+                    <button onclick="topFunction()" id="top" title="Go to top">
                 <span class="material-icons">
                 arrow_upward
                 </span>
                 </button>
+                </div>
+                
             </div><!-- /content__item -->
             <div class="content__item">
                 <div class="content__item-intro">
@@ -153,6 +151,7 @@
                 <div class="content__item-text">
                     <p class="mb-5"><strong>Mei Flower Cake</strong> is a sole brand for flower-shaped rick cake, based in Seoul, South Korea. <br>To emphasize its brand identity, which is 'Lovely blossom', I've done the art direction with artwork, business card, sticker, menu etc.
                     </p>
+                    
                     <hr>
                     <div class="row mt-5">
                         <div class="col-sm-6 mb-2">
@@ -162,14 +161,14 @@
                             <img src="/img/3.1.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
-                    <p>Feel free to contact me for any business inquiries! 😎<br>heesushin-ing@gmail.com</p>
-                    
+                    <p class="mb-5">Feel free to contact me for any business inquiries! 😎<br>heesushin-ing@gmail.com</p>
+                   <button onclick="topFunction()" id="top" title="Go to top">
+                    <span class="material-icons">
+                    arrow_upward
+                    </span>
+                    </button>
                 </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">
-                <span class="material-icons">
-                arrow_upward
-                </span>
-                </button>
+                 
             </div>
             
             <div class="content__item">
@@ -191,13 +190,14 @@
                             <img src="/img/31.jpg" class="img-fluid" alt="">
                         </div>
                     </div>  
-                    <span><p>To see more detailed process, come to my <a href="https://www.behance.net/gallery/43910131/360-degree-Airwasher-HOO-with-iPhoneiWatch-app" target="_blank">behance</a></p></span>    
-                </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">
+                    <span><p>To see more detailed process, come to my <a href="https://www.behance.net/gallery/43910131/360-degree-Airwasher-HOO-with-iPhoneiWatch-app" target="_blank">behance</a></p></span>
+                    <button onclick="topFunction()" id="top" title="Go to top">
                 <span class="material-icons">
                 arrow_upward
                 </span>
                 </button>
+                </div>
+                
             </div><!-- /content__item -->
 
             <button class="content__close" onclick="myFunction()">Close</button>
@@ -207,6 +207,7 @@
         </div>
         
     </main>
+    <!-- Footer -->
 
 
     <!-- Bootstrap core JavaScript
@@ -236,7 +237,7 @@
   <script src="js/bootstrap.js"></script>
     <script>
         //Get the button
-    var mybutton = document.getElementById("myBtn");
+    var mybutton = document.getElementById("top");
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
@@ -255,6 +256,24 @@
       document.documentElement.scrollTop = 0;
     }
     </script>
-   
+   <script>
+      $(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});
+      
+      </script>
   </body>
 </html>
