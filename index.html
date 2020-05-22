@@ -1,260 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Design portfolio for Heesu">
-    <meta name="author" content="Heesu">
-    <link rel="icon" href="">
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 
-    <title>Heesu</title>
+<head>
+	<meta charset="utf-8" />
+	<title>Heesu</title>
+	<meta content="" name="description" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="keywords" content="design, portfolio" />
+	<meta name="author" content="Heesu" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-      
-    <!-- Custom styles for this template -->
-    <link href="/css/base.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+	<link href="css/style1.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
 
-  </head>
+<body class="body loading">
+	<main class="app">
+		<div class="frame">
+			<div class="frame__demos">
+				<a href="index.html" class="frame__demo frame__demo--current">Projects</a>
+				<a href="index3.html" class="frame__demo">Resume</a>
+			</div>
+			<div class="frame__wrap">
+				<div class="frame__credits">
+					<div class="credit-wrap">
+						<div class="frame__role">Designed and developed by Heesu @2020</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="grid">
+			<div class="grid-items">
+				<a href="index2.html" aria-label="link-1" rel="noopener" draggable="false" class="link w-inline-block">
+					<h1 class="h1">Finance</h1>
+					<div class="text">SG Markets, SG CIB</div>
+					<img class="content__img" src="img/img1.jpg" alt="img1" />
+				</a>
+				<div class="divider"></div>
+				<a href="index3.html" aria-label="link-2" rel="noopener" draggable="false" class="link w-inline-block">
+					<h1 class="h1">Branding</h1>
+					<div class="text">MEI Flower shop, Star cafe</div>
+					<img class="content__img" src="img/img2.jpg" alt="img2"/>
+				</a>
+			</div>
+			<div class="grid-items">
+				<div class="divider d2"></div>
+				<a href="index4.html" aria-label="link-2" rel="noopener" draggable="false" class="link w-inline-block">
+					<h1 class="h1">IOT</h1>
+					<div class="text">HOO - Air Washer</div>
+					<img class="content__img" src="img/img3.jpg" alt="img3" />
+				</a>
+				<div class="divider d3"></div>
+			</div>
+		</div>
+	</main>
+	<script src="js/three.min.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+	<script src="js/Math.js"></script>
+	<script src="js/EffectShell.js"></script>
+	<script src="js/RGBShiftEffect.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script>
+	const container = document.body
+	const itemsWrapper = document.querySelector('.grid')
 
-  <body>
+    // Preload images
+    const preloadImages = () => {
+        return new Promise((resolve, reject) => {
+            imagesLoaded(document.querySelectorAll('img'), resolve);
+        });
+    };
+    // And then..
+    preloadImages().then(() => {
+        // Remove the loader
+        document.body.classList.remove('loading');
+        const effect = new RGBShiftEffect(container, itemsWrapper, { strength: 0.25 })
+	});
+	</script>
+</body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand p-0" href="#"><img src="/img/logo.png" alt="Heesu" height="25" width="25"/></a>
-        </nav>
-    </header>
-
-    <main role="main">
-        <span>
-            <div class="jumbotron text-center" id="jumbotron">
-                <h1>Hello, this is Heesu</h1><h2>designing the experience<br>both in my <a href="https://www.instagram.com/hs____330/" target="_blank">private</a> and <a href="https://www.linkedin.com/in/heesushin/" target="_blank">professional</a> worlds! </h2>
-                <h4>Currently working in finance, <a href="http://design.sgmarkets.com" target="_blank">Societe Generale CIB</a></h4>
-                
-            </div>
-      </span>
-        <div class="grid-wrap">
-        <div class="grid">
-            <a href="#" class="grid__item" onclick="myFunction()">
-                <div class="grid__item-bg"></div>
-                <div class="grid__item-wrap">
-                    <img class="grid__item-img" src="img/1.jpg" alt="Some image" />
-                </div>
-                <h3 class="grid__item-title">Finance</h3>
-                <h4 class="grid__item-number">01</h4>
-            </a>
-            <a href="#" class="grid__item" onclick="myFunction()">
-                <div class="grid__item-bg"></div>
-                <div class="grid__item-wrap">
-                    <img class="grid__item-img" src="img/2.jpg" alt="Some image" />
-                </div>
-                <h3 class="grid__item-title">Vehicle</h3>
-                <h4 class="grid__item-number">02</h4>
-            </a>
-            <a href="#" class="grid__item" onclick="myFunction()">
-                <div class="grid__item-bg"></div>
-                <div class="grid__item-wrap">
-                    <img class="grid__item-img" src="img/3.jpg" alt="Some image" />
-                </div>
-                <h3 class="grid__item-title">Branding</h3>
-                <h4 class="grid__item-number">03</h4>
-            </a>
-            <a href="#" class="grid__item" onclick="myFunction()">
-                <div class="grid__item-bg"></div>
-                <div class="grid__item-wrap">
-                    <img class="grid__item-img" src="img/10.jpg" alt="Some image" />
-                </div>
-                <h3 class="grid__item-title">IoT</h3>
-                <h4 class="grid__item-number">04</h4>
-            </a>
-
-        </div>
-        </div><!-- /grid-wrap -->
-        <div class="content">
-            <div class="content__item">
-                <div class="content__item-intro">
-                    <img class="content__item-img" src="img/1.jpg" alt="Some image" />
-                    <h2 class="content__item-title"></h2>
-                </div>
-                <h3 class="content__item-subtitle">How I design the suites of B2B services in finance</h3>
-                <div class="content__item-text">
-                    <div class="row">
-                        <p class="col-sm-6 mb-3">As a UX/UI designer in Societe Generale CIB, currently based in London, I am tackling complex financial projects in the BtoB space. That's why our team motto is <strong>Rethink Complexity</strong>.<br><br>From daily tools for internal staff to professional financial services for sales, analysts, syndicate originators, etc, I have been working on many different projects. Also, our team has designed and developed our <strong>SG Design System</strong> to unite the user experience across the services.</p>
-                        
-                    
-                        <div class="col-sm-6">
-                            <p class="mb-3">Sadly, most projects are confidential for now, but you can read the stories for more details.</p>
-                            <span class="card mt-5">
-                              <div class="card-body">
-                                <a class="card-text" href="https://medium.com/societe-generale-design/coffee-excel-and-invision-inside-the-everyday-of-a-financial-ux-designer-f8066895d61e" target="_blank">Coffee, Excel and InVision—Inside the Everyday of a Financial UX Designer</a>
-                              </div>
-                            </span>
-                            <br>
-                            <span class="card mt-2">
-                              <div class="card-body">
-                                <a class="card-text" href="https://medium.com/societe-generale-design/retro-londons-fintech-design-summit-2019-a24ab1def8c2" target="_blank">Retro — London’s Fintech Design Summit 2019 | How to tackle complexity and focus on users in finance</a>
-                              </div>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__item-paragraph mt-5">
-                    <hr><h3 class="mb-4">Projects</h3>
-                    <img src="/img/1.1.jpg" class="img-fluid" alt="">
-                    <span class="card my-4">
-                              <div class="card-body">
-                                <a class="card-text" href="https://info.sgmarkets.com/en/service/research-and-insight" target="_blank">SG Markets Research & Insight <br> a financial research service with a specific selection of publications and trade ideas</a>
-                              </div>
-                            </span>
-                </div>
-                <div class="content__item-paragraph">
-                    <hr><h3 class="mb-4">Team</h3>
-                    <img src="/img/1.4.jpg" class="img-fluid" alt="">
-                    <p class="mt-4">How I work with others: collaboration is a key to become a better UX designer. I have worked with various profiles within finance industry, plus IT developers. Moreover, our UX team has almost 20 designers across London, Paris and New York. We've worked together with projects for pair design or evolution of our design system.</p>
-                    <h3>Working together is always challenging, but enjoyable a lot! 😆</h3>
-                </div>
-                
-                <button onclick="topFunction()" id="myBtn" title="Go to top">
-                <span class="material-icons">
-                arrow_upward
-                </span>
-                </button>
-            </div><!-- /content__item -->
-            <div class="content__item">
-                <div class="content__item-intro">
-                    <img class="content__item-img" src="img/2.jpg" alt="Some image" />
-                    <h2 class="content__item-title"> </h2>
-                </div>
-                <h3 class="content__item-subtitle">How I got interested in vehicle</h3>
-                <div class="content__item-text">
-                    <p class="mb-5">Even 10 years ago, most of the concept cars from industry were only emphasising how fast and sexy they are. However, the trend is completely changed. The vehicle is not just a transportation, but it is the space closed related to our lives.</p>
-                    <p>
-                    Thus, crafting the user experience within and even around the mobility is becoming more and more important. Although I work in finance industry currently, I have been interested in vehicle.</p>
-                    
-                    
-                    
-                    
-                </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">
-                <span class="material-icons">
-                arrow_upward
-                </span>
-                </button>
-            </div><!-- /content__item -->
-            <div class="content__item">
-                <div class="content__item-intro">
-                    <img class="content__item-img" src="img/3.jpg" alt="Some image" />
-                    <h2 class="content__item-title"> </h2>
-                </div>
-                <h3 class="content__item-subtitle">Branding for visual identity with business strategy</h3>
-                <div class="content__item-text">
-                    <p class="mb-5"><strong>Mei Flower Cake</strong> is a sole brand for flower-shaped rick cake, based in Seoul, South Korea. <br>To emphasize its brand identity, which is 'Lovely blossom', I've done the art direction with artwork, business card, sticker, menu etc.
-                    </p>
-                    <hr>
-                    <div class="row mt-5">
-                        <div class="col-sm-6 mb-2">
-                            <img src="/img/3.2.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-6 mb-2">
-                            <img src="/img/3.1.jpg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <p>Feel free to contact me for any business inquiries! 😎<br>heesushin-ing@gmail.com</p>
-                    
-                </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">
-                <span class="material-icons">
-                arrow_upward
-                </span>
-                </button>
-            </div>
-            
-            <div class="content__item">
-                <div class="content__item-intro">
-                    <img class="content__item-img w-100 " src="img/10.jpg" alt="HOO" />
-                    <h2 class="content__item-title"> </h2>
-                </div>
-                <h3 class="content__item-subtitle">An airwasher to purify the air at your home</h3>
-                
-                <div class="content__item-text">
-                    <p class="mb-5">HOO was 100% my personal work from concept development, product design to user interface design with integrated user experience.<p>
-               
-                    <p class="mb-5">Since there are more and more needs to purify the air within the house, the airwasher can be stylish enough to be one of the interior products. At the same time, it can be smart enough to be connected to our smart phones.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-8 mb-2">
-                            <img src="/img/27.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-4 mb-2">
-                            <img src="/img/31.jpg" class="img-fluid" alt="">
-                        </div>
-                    </div>  
-                    <span><p>To see more detailed process, come to my <a href="https://www.behance.net/gallery/43910131/360-degree-Airwasher-HOO-with-iPhoneiWatch-app" target="_blank">behance</a></p></span>    
-                </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">
-                <span class="material-icons">
-                arrow_upward
-                </span>
-                </button>
-            </div><!-- /content__item -->
-
-            <button class="content__close" onclick="myFunction()">Close</button>
-            <svg class="content__indicator icon icon--caret"><use xlink:href="#icon-caret"></use></svg>
-        
-            
-        </div>
-        
-    </main>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-
-      
-    <script>
-        function myFunction() {
-          var x = document.getElementById("jumbotron");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
-        }
-    </script>  
-      <script src="js/imagesloaded.pkgd.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/charming.min.js"></script>
-  <script src="js/TweenMax.min.js"></script>
-  <script src="js/demo.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-    <script>
-        //Get the button
-    var mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
-   
-  </body>
 </html>
