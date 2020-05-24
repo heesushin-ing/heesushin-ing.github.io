@@ -446,11 +446,15 @@ padding: 3rem;
 }
 
 @media (max-width: 479px) {
+    .app {
+    overflow-y: hidden;
+        position: fixed;
+    }
     
     .contents{
-        padding: 1rem;
+    padding: 1rem;
     } 
-    
+
   .text {
     font-size: 0.8rem;
   }
