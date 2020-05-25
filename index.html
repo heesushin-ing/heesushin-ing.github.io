@@ -19,15 +19,24 @@
 
 </head>
 
-<body class="body loading" style="overflow: hidden; position: relative; height: 100%;">
+<body class="body loading">
 	<main class="app">
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Process</a>
+          </div>
+        </div>
+ 
 		<div class="frame">
-			<div class="frame__demos">
-				<a href="index.html" class="frame__demo frame__demo--current">Projects</a>
-				<a href="" class="frame__demo" target="_blank">Resume</a>
+			<div class="frame__demos">				
+				<a style="cursor: pointer" class="frame__demo" onclick="openNav()">Menu</a>         
 			</div>
-			
 		</div>
+            
 		<div class="grid">
 			<div class="grid-items">
 				<a href="index2.html" aria-label="link-1" rel="noopener" draggable="false" class="link w-inline-block">
@@ -53,9 +62,9 @@
 			</div>
 		</div>
         <footer>
-        <a href="https://www.linkedin.com/in/heesushin/" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/in/heesushin" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://www.instagram.com/hs____330/" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://medium.com/@heesushin92" class="fa fa-medium" target="_blank"></a>
         <p>Designed and developed by Heesu @2020</p>
 
         </footer>
@@ -84,6 +93,15 @@
         const effect = new RGBShiftEffect(container, itemsWrapper, { strength: 0.25 })
 	});
 	</script>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 </body>
 
 </html>

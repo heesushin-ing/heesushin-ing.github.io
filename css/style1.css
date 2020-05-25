@@ -177,7 +177,7 @@ padding: 3rem;
   top: 0%;
   right: 0%;
   bottom: 0%;
-  z-index: 3;
+  z-index: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -214,40 +214,11 @@ padding: 3rem;
 }
 
 .frame__demo:hover{
-  text-decoration: underline;
-}
-
-.frame__links {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-
-.frame__name {
-  font-weight: 700;
+  text-decoration: line-through;
 }
 
 .italic {
   text-transform: none;
-}
-
-.frame__init {
-  margin-bottom: 5px;
-  text-align: center;
 }
 
 .italic {
@@ -256,26 +227,6 @@ padding: 3rem;
   font-style: italic;
 }
 
-.frame__link {
-  color: #000;
-}
-
-.frame__link.fl_1:hover{
-  text-decoration: underline;
-}
-
-.frame__link.fl_1 {
-  margin-left: 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.frame__inner {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
 
 @media (max-width: 991px) {
 
@@ -298,39 +249,6 @@ padding: 3rem;
   .frame__demo {
     font-size: 0.75rem;
   }
-
-  .frame__links {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 auto;
-    -ms-flex: 0 auto;
-    flex: 0 auto;
-  }
-
-  .frame__init {
-    font-size: 0.75rem;
-  }
-
-  .frame__link {
-    font-size: 0.75rem;
-  }
-
-  .frame__link.fl_1 {
-    margin-top: 8px;
-  }
-
-  .frame__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-  }
-    
-
     
 }
 
@@ -407,23 +325,13 @@ padding: 3rem;
     line-height: 1rem;
   }
 
-  .frame__inner {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
 }
 
 
 /* Footer */
 
 footer {
-  z-index: -100;
+  z-index: 0;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -440,6 +348,7 @@ footer p{
 .fa {
     margin: 0;
     padding: 0.4rem;
+    padding-right: 1rem;
     font-size: 1rem;
     text-align: center;
     text-decoration: none;
@@ -447,7 +356,7 @@ footer p{
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 /* Project page */
@@ -488,6 +397,15 @@ strong {
     text-decoration: line-through;
 }
 
+p a {
+    color: black;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: line-through;
+}
+
 hr {
     border: 0.5px solid black;
     margin-bottom: 2rem;
@@ -498,4 +416,54 @@ hr {
   src: url('../fonts/Le-Murmure.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
+}
+
+
+/* Menu */
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 0.8rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  text-decoration: line-through;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  top: 15px;
+  right: 35px;
+  }
 }
