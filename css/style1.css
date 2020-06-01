@@ -93,7 +93,7 @@ p {
 }
 
 .text {
-  margin-top: 0.2rem;
+  margin-top: 1rem;
   line-height: 1rem;
 }
 
@@ -361,6 +361,33 @@ footer p{
 }
 
 /* Project page */
+.items {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  /* Styling preference */
+  justify-content: space-between;
+}
+
+.item {
+  flex: 0 0 280px;
+  margin-right: 1rem; 
+}
+
+.items-columns {
+  flex-flow: row wrap;
+  padding-right: 0; 
+}
+
+.items-columns .item {
+  flex: 1 1 20%;
+  margin-bottom: 1rem; 
+}
+
+
 .img {
 	position: relative;
 	height: auto;
