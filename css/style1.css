@@ -388,6 +388,28 @@ footer p{
   margin-bottom: 1rem; 
 }
 
+.items .item {
+    position: relative;
+     width: 300px;     
+     height: 300px;
+     overflow: hidden;
+}
+
+.item img {
+    position: absolute;
+     max-width: 100%;
+     width: 100%;
+     height: auto;
+     top: 50%;     
+     left: 50%;
+     transform: translate( -50%, -50%);
+}
+
+img .hoo {
+    height: 100%;
+    width: auto;
+}
+
 
 .img {
 	position: relative;
@@ -462,6 +484,12 @@ hr {
   transition: 0.5s;
 }
 
+.overlay-content .projects {
+  font-family: 'Le murmure';
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
 .overlay-content {
   position: relative;
   top: 20%;
@@ -469,10 +497,12 @@ hr {
   text-align: center;
 }
 
+
 .overlay a {
   padding: 1rem;
   text-decoration: none;
   font-size: 3rem;
+    font-weight: 200;
   color: #fff;
   display: block;
   transition: 0.3s;
@@ -493,7 +523,7 @@ hr {
     margin: 0;
     font-weight: 100;
     font-size: 0.8rem;
-    padding-top: 0.5rem;
+    padding-top: 0.2rem;
 }
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
