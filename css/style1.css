@@ -398,14 +398,13 @@ footer p{
 
 .items .item {
     position: relative;
-     width: 300px;     
+     width: auto;     
      height: 300px;
      overflow: hidden;
 }
 
 .item img {
-    position: absolute;
-     max-width: 100%;
+    position: relative;
      width: 100%;
      height: auto;
      top: 50%;     
@@ -413,10 +412,6 @@ footer p{
      transform: translate( -50%, -50%);
 }
 
-img .hoo {
-    height: 100%;
-    width: auto;
-}
 
 .flex-container {
     display: flex;
