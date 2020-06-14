@@ -19,25 +19,41 @@
 
 </head>
 
-<body class="body loading">
+<body class="body loading gooey-transition">
 	<main class="app">
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
+        <!-- The cd-modal -->
+        <div id="myNav" class="cd-modal">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
+          <div class="cd-modal-content">
             <a href="#">About</a>
             <a href="/index.html" class="projects">Projects</a>
             <a href="#">Process</a>
  
           </div>
         </div>
+   
+
  
 		<div class="frame">
 			<div class="frame__demos">				
-				<a style="cursor: pointer" class="frame__demo" onclick="openNav()">Menu</a>         
+                <a href="#modal-1" class="frame__demo">Menu</a>
 			</div>
-		</div>
             
+		</div>
+               <div class="cd-modal" id="modal-1">
+            <div class="modal-content">
+                <a href="#">About</a>
+                <a href="/index.html" class="projects">Projects</a>
+                <a href="#">Process</a>
+
+            </div> <!-- .modal-content -->
+
+            <a href="#0" class="modal-close">Close</a>
+        </div> <!-- .cd-modal -->
+        <div class="cd-transition-layer" data-frame="25"> 
+	       <div class="bg-layer"></div>
+        </div> <!-- .cd-transition-layer -->
+    
 		<div class="grid">
 			<div class="grid-items">
 				<a href="index2.html" aria-label="link-1" rel="noopener" draggable="false" class="link w-inline-block">
@@ -62,6 +78,7 @@
 				<div class="divider d3"></div>
 			</div>
 		</div>
+ 
         <footer>
         <a href="https://www.linkedin.com/in/heesushin" class="fa fa-linkedin" target="_blank"></a>
         <a href="https://www.instagram.com/hs____330/" class="fa fa-instagram" target="_blank"></a>
@@ -70,7 +87,12 @@
 
         </footer>
 	</main>
-    
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        if( !window.jQuery ) document.write('<script src="js/jquery-2.2.1-min.js"><\/script>');
+    </script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 	<script src="js/three.min.js"></script>
     <script src="js/TweenLite.min.js"></script>
 	<script src="js/Math.js"></script>
@@ -94,15 +116,6 @@
         const effect = new RGBShiftEffect(container, itemsWrapper, { strength: 0.25 })
 	});
 	</script>
-    <script>
-        function openNav() {
-          document.getElementById("myNav").style.height = "100%";
-        }
-
-        function closeNav() {
-          document.getElementById("myNav").style.height = "0%";
-        }
-    </script>
 </body>
 
 </html>
