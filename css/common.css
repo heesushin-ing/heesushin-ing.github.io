@@ -9,6 +9,7 @@ body {
     overflow-x: hidden;
 }
 
+
 /* Page Loader */
 .loading::before,
 .loading::after {
