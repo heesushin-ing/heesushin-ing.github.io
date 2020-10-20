@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden
 }
 
 body {
@@ -201,6 +202,17 @@ padding: 3rem;
 
 }  
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 479px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 
 .frame {
   position: fixed;
@@ -370,7 +382,8 @@ footer {
   width: 100%;
   z-index: 10000;
   text-align: center;
-
+  padding-bottom: 1rem;
+padding-top: 1rem;
 }
 
 footer p{
@@ -490,11 +503,20 @@ p a:hover {
     text-decoration: line-through;
 }
 
-hr {
-    border: 0.5px solid black;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+hr .white {
+    border: 0.3px solid white;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    
 }
+
+hr {
+    border: 0.5px solid;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+
 @font-face {
   font-family: 'Le murmure';
   src: url('../fonts/Le-Murmure.otf') format('opentype');
