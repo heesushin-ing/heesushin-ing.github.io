@@ -80,7 +80,6 @@ p {
 .body {
   min-height: 100%;
   background-color: #fff;
-  position: relative;
 
 }
 
@@ -218,6 +217,7 @@ padding: 3rem;
 .flex-container {
   display: flex;
   flex-direction: row;
+    justify-content: space-between;
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
