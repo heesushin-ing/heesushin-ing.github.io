@@ -61,10 +61,10 @@
             <h2>Suites of B2B services in finance</h2>
                 <div class="flex-container">
                     <div class="flex">
-                        <h3>Mission</h3><p>Rethink Complexity</p>
+                        <h4>Mission</h4><p>Rethink Complexity</p>
                     </div>
                     <div class="flex">
-                        <h3>Role</h3><p>From daily tools for internal staff to professional financial services for sales, analysts, syndicate originators, etc, I have been working on many different projects as a UX lead. Also, our team has designed and developed our SG Design System to unite the user experience across the services.</p>
+                        <h4>Role</h4><p>From daily tools for internal staff to professional financial services for sales, analysts, syndicate originators, etc, I have been working on many different projects as a UX lead. Also, our team has designed and developed our SG Design System to unite the user experience across the services.</p>
                     </div>
                 </div>
             
@@ -72,14 +72,15 @@
                             
                 <div class="article"><a href="https://medium.com/societe-generale-design/coffee-excel-and-invision-inside-the-everyday-of-a-financial-ux-designer-f8066895d61e" target="_blank">Coffee, Excel and InVision—Inside the Everyday of a Financial UX Designer</a>
                 </div>
-                <div class="article"><a href="https://medium.com/societe-generale-design/retro-londons-fintech-design-summit-2019-a24ab1def8c2" target="_blank">Retro — London’s Fintech Design Summit 2019 | How to tackle complexity and focus on users in finance</a>
+                <div class="article"><a href="/casestudies.html" target="_blank">Retro — London’s Fintech Design Summit 2019 | How to tackle complexity and focus on users in finance</a>
                 </div>
         
                 
                 <div>
-                    <hr><h3 class="mb-4">Projects</h3>
+                    <hr><h3 class="mb-4">Case studies</h3>
                     <img src="/img/1.1.jpg" class="img" alt="">
-                    <div class="article"><a href="https://info.sgmarkets.com/en/service/research-and-insight" target="_blank">SG Markets Research &amp; Insight <br> a financial research service with a specific selection of publications and trade ideas</a>
+                    <div class="article">
+                        <a href="casestudies.html" target="_blank" onclick="passWord()">SG Markets - case studies</a>
                     </div>
                             
                               
@@ -125,6 +126,33 @@
         const effect = new TrailsEffect(container, itemsWrapper)
 	});
     </script>
+    
+    <script>
+    function passWord() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Your Password',' ');
+    while (testV < 3) {
+    if (!pass1)
+    history.go(-1);
+    if (pass1.toLowerCase() == "letmeinheesu") {
+    alert('You Got it Right!');
+    window.open('casestudies.html');
+    break;
+    }
+    testV+=1;
+    var pass1 =
+    prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+    }
+    if (pass1.toLowerCase()!="password" & testV ==3)
+    history.go(-1);
+    return " ";
+    }
+    </script>
+    <CENTER>
+    <FORM>
+    <input type="button" value="Enter Protected Area" onClick="passWord()">
+    </FORM>
+    </CENTER>
 </body>
 
 </html>
