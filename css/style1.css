@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow-x: hidden
+    overflow-x: hidden;
+    overflow-y: scroll;
+ -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -12,8 +14,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   text-transform: none;
-    overflow-y: scroll;
- -webkit-overflow-scrolling: touch;
+
 }
 
 
@@ -349,7 +350,6 @@ padding: 3rem;
 
 @media (max-width: 479px) {
     .app {
-    overflow-y: hidden;
     position: relative;
     max-height: 100%;
     }
