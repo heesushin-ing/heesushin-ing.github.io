@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto; !important
     -webkit-overflow-scrolling: touch;
 }
 
