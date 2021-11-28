@@ -428,7 +428,6 @@ footer a{
   display: flex;
   flex-flow: row nowrap;
   -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
 
   /* Styling preference */
   justify-content: space-between;
