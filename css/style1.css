@@ -5,7 +5,6 @@ body {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: inherit;
- -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -17,6 +16,9 @@ body {
 
 }
 
+body .sc {
+     -webkit-overflow-scrolling: touch;
+}
 
 
 h1 {
