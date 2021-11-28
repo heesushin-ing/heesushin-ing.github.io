@@ -16,7 +16,9 @@ body {
 
 }
 
-
+.sc {
+    -webkit-overflow-scrolling: touch;
+    }
 
 h1 {
   display: inline-block;
