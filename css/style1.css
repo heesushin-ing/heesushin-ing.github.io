@@ -4,7 +4,8 @@ body {
     padding: 0;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: inherit;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -16,9 +17,6 @@ body {
 
 }
 
-body .sc {
-     -webkit-overflow-scrolling: touch;
-}
 
 
 h1 {
@@ -215,7 +213,8 @@ margin: auto;
 max-width: 1100px;
 position: relative;
 padding: 3rem;
-
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }  
 
 .flex-container {
