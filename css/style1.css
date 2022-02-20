@@ -1,0 +1,870 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: auto; !important
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: none;
+
+}
+
+.sc {
+    -webkit-overflow-scrolling: touch;
+    }
+
+h1 {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Le murmure', sans-serif;
+  font-size: 8rem;
+  line-height: 7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.blank {
+    height: 10rem;
+}
+
+a {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.body {
+  min-height: 100%;
+  background-color: #fff;
+
+}
+
+.bg-black {
+    background: black;
+}
+
+.bg-white {
+    background: white;
+}
+
+.text-white {
+    color: white;
+}
+
+/* -------------------------------- 
+
+Vertical stepper
+
+-------------------------------- */
+
+
+
+
+
+
+
+.app {
+    overflow-x: hidden;
+    position: absolute;
+    top: 3rem;
+
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.text {
+  margin-top: 1rem;
+  line-height: 1rem;
+}
+
+.link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5rem 23px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.h1 {
+  padding-top: 1rem;
+  line-height: 6rem;
+}
+
+.grid {
+  position: relative;
+  z-index: 3;
+}
+
+.grid-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.grid-items.g2 {
+  padding-left: 24px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.divider {
+  width: 120px;
+  height: 2px;
+  background-color: #000;
+}
+
+.divider.d2 {
+  width: 160px;
+}
+
+.divider.d3 {
+  width: 320px;
+}
+
+.contents {
+margin: auto;
+max-width: 1100px;
+position: relative;
+padding: 3rem;
+
+}  
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 479px) {
+    
+  .flex-container {
+    flex-direction: column;
+  }
+
+}
+
+
+.frame {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+
+  padding: 2rem 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.frame__demos {
+  text-align: center;
+    margin-bottom: 3rem;
+}
+
+.frame__demo {
+  color: #000;
+  text-decoration: none;
+}
+
+.frame__demo--current{
+  text-decoration: underline;
+}
+
+.frame__demo:hover{
+  text-decoration: line-through;
+}
+
+.italic {
+  text-transform: none;
+}
+
+.italic {
+  text-transform: none;
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+@media (max-width: 991px) {
+
+  .h1 {
+    font-size: 6rem;
+  }
+
+  .divider {
+    width: 90px;
+  }
+
+  .divider.d2 {
+    width: 110px;
+  }
+
+  .divider.d3 {
+    width: 280px;
+  }
+
+  .frame__demo {
+    font-size: 0.75rem;
+  }
+    
+}
+
+@media (max-width: 767px) {
+  .link {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .grid-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .italic {
+    font-size: 1rem;
+  }
+
+  .frame__link {
+    font-size: 0.55rem;
+  }
+    
+     .frame__demo {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 479px) {
+    .app {
+    position: relative;
+    max-height: 100%;
+    }
+    
+    .contents{
+    padding: 1rem;
+    } 
+
+  .text {
+    font-size: 0.8rem;
+  }
+
+  .link {
+    margin: 4vw 0px;
+    
+  }
+
+  .h1 {
+    padding-top: 2vw;
+    font-size: 18vw;
+    line-height: 18vw;
+  }
+
+  .frame {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .frame__demo {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+}
+
+
+/* Footer */
+
+
+
+footer {
+  left: 0;
+margin-bottom: 3ßrem;
+  z-index: 10000;
+  text-align: center;
+
+}
+
+footer p{
+    font-size: 0.8rem;
+    margin: 0.4rem;;
+}
+
+footer a{
+    font-size: 3rem;
+    margin: 0.4rem;;
+    color: black;
+}
+
+.fa {
+    margin: 0;
+    padding: 0.4rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+/* Project page */
+.items {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-overflow-scrolling: touch;
+
+  /* Styling preference */
+  justify-content: space-between;
+}
+
+.item {
+  flex: 0 0 280px;
+  margin-right: 1rem; 
+}
+
+.items-columns {
+  flex-flow: row wrap;
+  padding-right: 0; 
+}
+
+.items-columns .item {
+  flex: 1 1 20%;
+  margin-bottom: 1rem; 
+}
+
+
+.img {
+	position: relative;
+	height: auto;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.items .item {
+    position: relative;
+     width: auto;     
+     height: 300px;
+}
+
+.item img {
+    position: relative;
+     width: 100%;
+     height: auto;
+     top: 50%;     
+     left: 50%;
+     transform: translate( -50%, -50%);
+}
+
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.flex {
+    padding-right: 1.5rem;
+}
+
+.article {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-color: #ececec;
+    border: 1px solid;
+}
+
+.article a {
+    color: black;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: line-through;
+}
+
+p a {
+    color: black;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: line-through;
+}
+
+hr .white {
+    border: 0.3px solid white;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    
+}
+
+hr {
+    border: 0.5px solid;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+
+@font-face {
+  font-family: 'Le murmure';
+  src: url('../fonts/Le-Murmure.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* slideshow tab */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.caption-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* Modal Window */
+/* Menu */
+
+.cd-modal a:hover, .cd-modal a:focus {
+  text-decoration: line-through;
+}
+
+.cd-modal .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .cd-modal {overflow-y: auto;}
+  .cd-modal a {font-size: 20px}
+  .cd-modal .closebtn {
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.cd-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  background-color: rgb(0,0,0);
+}
+
+.cd-modal .modal-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+.cd-modal .modal-content .projects {
+  font-family: 'Le murmure';
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.cd-modal a {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 3rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.cd-modal .modal-close {
+  /* 'X' icon */
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  right: 5%;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+  color: transparent;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: visibility 0s .3s, opacity .3s 0s, -webkit-transform .3s 0s;
+  transition: visibility 0s .3s, opacity .3s 0s, -webkit-transform .3s 0s;
+  transition: transform .3s 0s, visibility 0s .3s, opacity .3s 0s;
+  transition: transform .3s 0s, visibility 0s .3s, opacity .3s 0s, -webkit-transform .3s 0s;
+}
+.cd-modal .modal-close::before, .cd-modal .modal-close::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  top: calc(50% - 1px);
+  left: calc(50% - 10px);
+}
+.cd-modal .modal-close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.cd-modal .modal-close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.cd-modal.visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity .7s, visibility 0s;
+  transition: opacity .7s, visibility 0s;
+}
+.cd-modal.visible .modal-content {
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+}
+.cd-modal.visible .modal-close {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0s 0s, opacity .3s 0s, -webkit-transform .3s 0s;
+  transition: visibility 0s 0s, opacity .3s 0s, -webkit-transform .3s 0s;
+  transition: transform .3s 0s, visibility 0s 0s, opacity .3s 0s;
+  transition: transform .3s 0s, visibility 0s 0s, opacity .3s 0s, -webkit-transform .3s 0s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+@media only screen and (min-width: 1100px) {
+
+  .cd-modal .modal-close {
+    height: 60px;
+    width: 60px;
+  }
+  .cd-modal .modal-close::before, .cd-modal .modal-close::after {
+    height: 2px;
+    width: 26px;
+    top: calc(50% - 1px);
+    left: calc(50% - 13px);
+  }
+  .cd-modal p {
+    font-size: 2rem;
+  }
+}
+/* Transition Layer */
+.cd-transition-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.cd-transition-layer .bg-layer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-2%);
+          transform: translateY(-50%) translateX(-2%);
+  /* its dimentions will be overwritten using jQuery to proportionally fit the viewport */
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.cd-transition-layer.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.cd-transition-layer.visible .bg-layer {
+  -webkit-transform: translateY(-50%) translateX(-98%);
+          transform: translateY(-50%) translateX(-98%);
+}
+.cd-transition-layer.opening .bg-layer, .cd-transition-layer.closing .bg-layer {
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.no-cssanimations .cd-transition-layer {
+  display: none;
+}
+
+/* -------------------------------- 
+
+Gooey Effect
+
+-------------------------------- */
+
+
+.gooey-transition .cd-modal {
+  background: #000;
+}
+.gooey-transition .cd-modal .modal-content {
+  color: #ffffff;
+}
+.gooey-transition .cd-modal .modal-close::before,
+.gooey-transition .cd-modal .modal-close::after {
+  background: #ffffff;
+}
+
+.gooey-transition .cd-transition-layer .bg-layer {
+  /* sprite composed of 25 frames */
+  width: 2500%;
+  background-image: url(../img/gooey.png);
+}
+
+.gooey-transition .cd-transition-layer.opening .bg-layer {
+  -webkit-animation: cd-sequence 0.8s steps(24) forwards;
+          animation: cd-sequence 0.8s steps(24) forwards;
+}
+.gooey-transition .cd-transition-layer.closing .bg-layer {
+  -webkit-animation: cd-sequence 0.8s steps(24) forwards reverse;
+          animation: cd-sequence 0.8s steps(24) forwards reverse;
+}
+@media only screen and (min-width: 768px) {
+  .gooey-transition h1 {
+    font-size: 8rem;
+  }
+  .gooey-transition h2 {
+    font-size: 6rem;
+  }
+}
+/* -------------------------------- 
+
+Animations
+
+-------------------------------- */
+@keyframes cd-sequence {
+  0% {
+    /* translateX(-2%) is used to horizontally center the first frame inside the viewport */
+    -webkit-transform: translateY(-50%) translateX(-2%);
+            transform: translateY(-50%) translateX(-2%);
+  }
+  100% {
+    /* translateX(-98%) (2% + 96) is used to horizontally center the last frame inside the viewport  */
+    -webkit-transform: translateY(-50%) translateX(-98%);
+            transform: translateY(-50%) translateX(-98%);
+  }
+}
+
