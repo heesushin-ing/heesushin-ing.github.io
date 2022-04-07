@@ -157,6 +157,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   position: absolute;
   right: 15px; }
 
+.blank {
+    height: 300px;
+}
+
 .site-nav {
   padding-top: 20px;
   padding-bottom: 20px; }
